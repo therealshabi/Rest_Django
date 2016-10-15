@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tester</title>
+</head>
+
+<body>
+
+<h1>Tester says...</h1>
+
+<div>
+    Hey there partner! <br>
+</div>
+
+<h2>Names</h2>
+
+<div>
+    {% if Name%}
+
+    <ul>
+        {%for n in Name%}
+        <li><{{n.name}}</li>
+        {% endfor %}
+    </ul>
+
+    {%else%}
+    <strong>There are no Names present</strong>
+    {% endif%}
+</div>
+
+
+</body>
+
+</html>
